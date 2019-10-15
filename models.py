@@ -64,7 +64,7 @@ class User(AbstractBaseUser):
     def is_active(self):
         return self.active
     
-class GuesttEmail(models.Model):
+class GuestEmail(models.Model):
     email     = models.EmailField()
     active    = models.BooleanField(default= True)
     update    = models.DateTimeField(auto_now= True)
